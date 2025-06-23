@@ -16,12 +16,29 @@ div.menu {
 
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+
+
+
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 1rem;
+  background-color: hotpink;
+  padding: 2px;
 }
+
+nav ul li {
+  padding: 0 1rem; /* Espaciado interno sin afectar el centrado */
+}
+
 
 
 body {
@@ -40,16 +57,13 @@ body {
 }
 
 h1 { 
-
     text-align: center;
-    max-width: 400px;
     justify-content: center;
-    display: inline-block;
 }
 
 img {
     max-height: 500px;
-    overflow-x: auto;
+    overflow: auto;
     border-radius: 5%;
     
 }
@@ -57,11 +71,12 @@ img {
 
 
 h3 {
-        background-color: midnightblue;
+    background-color: midnightblue;
     font: italic;
     color: hotpink;
     display: inline;
-     padding: 5px;
+    padding: 5px;
+    border-radius: 6px;
 }
 
 ol {
@@ -69,11 +84,17 @@ ol {
 }
 
 
+
+
 li.reg a {
-    background-color: pink;
+    background-color: white;
     color:red;
     text-decoration: none;
     font-weight: bold;
+    padding: 2px;
+    border-radius: 3px;
+
+    
 
 }
 
@@ -82,5 +103,7 @@ li.link a {
     color:aliceblue;
     text-decoration: none;
     font-weight: bold;
+    padding: 2px;
+    border-radius: 3px;
 
 }
